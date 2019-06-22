@@ -1,8 +1,31 @@
 // Home Content
+.page_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  color: @header-font-color;
+  background: @nav-bg;
+  
+  h1 {
+    font-size: 5rem;
+    padding: 1.5%;
+  }
+  @media @phone {
+    h1 {
+      padding: 2.5%;
+    }
+  }
+}
 
 .home {
 
   .intro {
+    img {
+      margin-top: 10px;
+      width: 100%;
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +47,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @phone {
+      
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      .sky { display: none; }
+      .launch {display: none;}
+      .blast { width: 90%;
+      margin: 20px auto;
+     }
     }
   }
 
@@ -58,6 +92,21 @@
       }
 
       .btn {
+        .makeButton(33%, @btn-bg-color, @sea-shell, 2rem, 0%, center);
+        .makeRounded(7%);
+        a {
+          color: @sea-shell;
+          text-decoration: none;
+          padding: 5%;
+          display: block;
+        }
+        a:hover {
+            .changeBtnColors(@sea-shell, @btn-bg-color);
+        }
+        /*.btn:hover {
+          background:@sea-shell;
+          color: @btn-bg-color;
+        }*/
       }
     }
 
@@ -70,6 +119,30 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+    @media @phone {
+      padding: 0;
+      flex-direction: column-reverse;
+      .walk-img {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .walk-text {
+        margin-top: 20px;
+        width: 90%;
+        .btn {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  footer {
+    background: @footer-background;
+    color: @footer-font-color;
+    .makeRounded(7%);
+    @media @phone {
+      margin-top: 20px;
     }
   }
 }// home

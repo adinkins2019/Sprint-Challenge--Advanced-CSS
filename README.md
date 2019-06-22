@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+With an adaptive website, layouts are built specifically for each specific device screen size. Fully responsive websites adjust regardless of screen size or device used by the end user.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+In "mobile first" design, designers built from the mindset of the mobile user and extend their design upward to the desktop user.  It's a bottoms-up approach to UI design. It uses "min-width" property of CSS to establish breakpoints.  The "desktop first" is the complete opposite. It's a "top-down" approach and requires that the design approach the design from the view point of the desktop user. It uses the "max-width" property of CSS to establish breakpoints.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+'font-size: 62.5%' in the html tag of a page sets the size of the font on the page to 10px. The default for a HTML page is 16px. However it is difficult to calculate rem units in terms of 16px.  For that reason, pages set the font-size to 62.5% or 10px to make calculate the size of 'rem' units easier.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a layer of abstraction on top of CSS.  It allows the user to use additional features like variables, mixins, functions that are not available in vanilla CSS.  Preprocessing doesn't replace CSS. It allows the user to write multiples lines of CSS while reusing previous written code. The reusable code is then compiled back into vanilla CSS to be interpreted by the web browser
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is mixins. The concept that has given me the most trouble has been mixins. That's why they are my favorite. They offer me a challenge, a way to learn, grow, and develop.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

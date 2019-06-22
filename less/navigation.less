@@ -1,1 +1,25 @@
 // Navigation code here
+nav {
+    width: 50%;
+    ul {
+        //border: 1px solid green;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        li {
+            
+            font-size: 2rem;
+            color: @nav-font;
+            
+            a {
+                color: @nav-font;
+                text-decoration: none;
+                
+            }
+        }
+    }
+    @media @phone {
+        width: 100%;
+
+    }
+}
